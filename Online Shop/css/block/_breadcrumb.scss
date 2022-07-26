@@ -1,0 +1,32 @@
+.breadcrumb {
+    padding: 60px 0;
+    background: #F8F3F4;
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    h1 {
+        font-size: 24px;
+        line-height: 29px;
+        color: #F16D7F;
+    }
+
+    &__menu > a {
+        text-decoration: none;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #636363;
+    }
+
+    &__menu > a:not(:last-child)::after {
+        content: ' / ';
+    }
+
+    &__menu > a:last-child {
+        font-weight: 700;
+        color: #F16D7F;
+    }
+}

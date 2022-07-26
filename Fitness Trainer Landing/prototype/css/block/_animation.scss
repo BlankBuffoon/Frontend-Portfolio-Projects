@@ -1,0 +1,81 @@
+.intro {
+    &__action {
+        a {
+            transition:  0.5s;
+        }
+
+        a:hover {
+            transform: scale(1.05);
+        }
+    }
+}
+
+
+.direction {
+    &__cards {
+        .card {
+            &::before {
+                position: absolute;
+                content: "Подробнее";
+                color: transparent;
+                // padding-top: 50%;
+                text-align: center;
+                font-size: 24px;
+                line-height: 200px;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                height: 0px;
+                transition: 0.8s;
+            }
+
+            &:hover {
+                &::before {
+                    height: 100%;
+                    color: white;
+                } 
+            }
+        }
+    }
+}
+
+
+.action {
+    &__wrap {
+        a {
+            transition:  0.5s;
+        }
+
+        a:hover {
+            transform: scale(1.05);
+        }
+    }
+}
+
+
+.form {
+    &__wrap {
+        form {
+            input[type=submit] {
+                transition:  0.5s;
+            }
+
+            input[type=submit]:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
+}
+
+
+.footer {
+    &__buttons {
+        a {
+            transition:  0.5s;
+        }
+
+        a:hover {
+            transform: scale(1.05);
+        }
+    }
+}

@@ -1,0 +1,445 @@
+$containerPadding: 16px;
+
+.container {
+  max-width: 1172px;
+  margin: 0 auto;
+  padding-right: $containerPadding;
+  padding-left: $containerPadding;
+}
+
+// TABLET 
+
+@media (max-width: 1172px) {
+
+  .top {
+    &__wrap {
+      min-height: $top__height-tablet;
+      background-position: 0 center;
+    }
+
+    h2 {
+      font-size: 44px;
+      line-height: 53px;
+    }
+
+    p {
+      font-size: 24px;
+      line-height: 29px;
+    }
+  }
+
+  .offer {
+    padding-top: 20px;
+
+    &__item {
+      min-height: 168px;
+    }
+
+    .item__big {
+      min-height: 116px;
+    }
+  }
+
+  .fetured {
+    padding-top: 154px;
+    padding-bottom: 64px;
+    
+    .card {
+      margin: 0;
+      
+      &:not(:nth-child(3n)) {
+        margin-right: 16px;
+      }
+
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+
+      &:nth-child(-n+3) {   
+          margin-bottom: 16px;
+      }
+    }
+  }
+
+  .feature {
+    padding: 48px 0 64px 0;
+    &__wrap {
+      flex-direction: column;
+    }
+
+    &__box:not(:last-child) { 
+      margin-bottom: 48px;
+    }
+  }
+
+  .subscribe {
+    padding-top: 64px;
+    padding-bottom: 140px;
+    background-size: cover;
+    background-position: -550px 0;
+
+    &__wrap {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__quote {
+      margin-bottom: 80px;
+    }
+  }
+
+
+
+  .catalog {
+    padding-top: 40px;
+
+    &__wrap {
+      display: flex;
+      justify-content: space-between;
+
+      &--left {
+        position: relative;
+
+        .filter {
+          left: 0;
+        }
+      }
+    }
+  }
+
+  .fetured__catalog {
+    padding-top: 40px;
+
+    .catalog__card:last-child {
+      display: none;
+    }
+  }
+
+  .pagination {
+    padding-bottom: 64px;
+  }
+
+
+
+  .slider {
+    height: 624px;
+  }
+
+  .about {
+    p {
+      width: 326px;
+    }
+
+    details {
+      summary {  
+        font-size: 10px;
+        line-height: 12px;
+      }
+    }
+  }
+
+  .product__fetured {
+    padding-bottom: 64px;
+
+    .card:last-child {
+      display: none;
+    }
+
+    .product__cards {
+      padding: 0;
+    }
+  }
+
+
+
+  .cart {
+    .shoppingCart {
+      // width: 100px;
+      margin-right: 0;
+      margin-bottom: 64px;
+    }
+
+    &__wrap--right {
+      flex-direction: row;
+      align-items: center;
+    }
+
+    &__form {
+      margin-right: 16px;
+    }
+  }
+}
+
+// TABLET CARD FIX
+
+@media (max-width: 1143px) {
+    .fetured {
+      .card {
+        margin: 0;
+        
+        &:not(:nth-child(2n)) {
+          margin-right: 16px;
+        }
+
+        &:nth-child(2n) {
+          margin-right: 0;
+        }
+
+        &:nth-child(-n+4) {   
+            margin-bottom: 16px;
+        }
+      }
+  }
+}
+
+// MOBILE
+
+@media (max-width: 768px) {
+  .header {
+    &__right {
+      .menu__button {
+        margin: 0;
+      }
+
+      a {
+        display: none;
+      }
+    }
+
+    &__nav {
+      width: 100%;
+      height: 100vh;
+    }
+  }
+
+  .top {
+    min-height: 375px;
+    &__wrap {
+      background-image: none;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__text {
+      margin-left: 0;
+
+      h1 {
+        font-size: 38px;
+        line-height: 46px;
+      }
+
+      p {
+        font-size: 20px;
+        line-height: 24px;
+      }
+    }
+  }
+
+  .offer {
+    padding-top: 64px;
+
+    &__item {
+      width: 100%;
+      height: 247px;
+
+      &:not(:last-child) {
+        margin-bottom: 32px;
+      }
+    }
+
+    .item__big {
+      height: 112px;
+      margin-top: 32px;
+    }
+  }
+
+  .fetured {
+    padding: 64px 0 96px 0;
+
+    &__cards {
+      padding-top: 64px;
+      padding-bottom: 40px;
+      flex-direction: column;
+      align-items: center;
+
+      .card {
+        margin: 0;
+
+        &:not(:nth-child(2n)) {
+          margin-right: 0px;
+        }
+
+        &:nth-child(2n) {
+          margin-right: 0;
+        }
+
+        &:not(:last-child) {
+          margin-bottom: 16px;
+        }
+      }
+    }
+  }
+
+  .feature {
+    &__box {
+      width: 360px - $containerPadding * 2;
+    }
+  }
+
+  .subscribe {
+    padding-bottom: 110px;
+
+    &__quote {
+      margin-bottom: 50px;
+      width: 360px - $containerPadding * 2;
+    }
+    
+    &__form {
+      width: 360px - $containerPadding * 2;
+    }
+  }
+
+  .footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    &__wrap {
+      flex-direction: column-reverse;
+    }
+
+    &__link {
+      margin-bottom: 40px;
+      
+      a {
+        img {
+          fill: red;
+        }
+      }
+    }
+  }
+
+
+
+  .breadcrumb {
+    padding-top: 24px;
+    padding-bottom: 46px;
+
+    &__wrap {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      h1 {
+        margin-bottom: 32px;
+      }
+    }
+  }
+
+  .catalog {
+    padding-top: 24px;
+
+    &__wrap {
+      align-items: center;
+      &--left {
+        left: 0;
+        .filter {
+          margin: 0;
+          padding-left: 0;
+          padding-right: 0;
+
+          summary {
+            svg {
+              margin-left: 0;
+              height: 25px;
+              width: 37px;
+            }
+
+            p {
+              display: none;
+            }
+          }
+        }
+      }
+
+      &--center {
+        label {
+          font-size: 12px;
+          line-height: 14px;
+
+          &:not(:last-child) {
+              padding-right: 24px;
+          }
+
+          .fa-chevron-down {
+              margin-left: 9px;
+          }
+        }
+
+        details {
+          summary {
+            margin-right: 24px;
+          }
+        }
+      }
+    }
+  }
+
+  .fetured__catalog {
+    padding-bottom: 40px;
+  }
+
+  .pagination {
+    padding-bottom: 64px;
+  }
+
+
+
+  .slider {
+    img {
+      width: 100%;
+    }
+  }
+
+
+
+  .cart {
+    &__item {
+      .item__description {
+        padding-top: 12px;
+        padding-bottom: 36px;
+        padding-left: 16px;
+
+        h2 {
+          font-size: 16px;
+          line-height: 19px;
+          margin-bottom: 24px;
+        }
+
+        p {
+          font-size: 14px;
+          line-height: 17px;
+        }
+
+        .item__quantity {
+          width: 24px;
+          height: 16px;
+        }
+      }   
+
+      button {
+        top: 16px;
+        right: 12px;
+      }   
+    }
+
+    &__button {
+      button {
+        padding: 10px 18px;
+      }
+    }
+
+    &__wrap--right {
+      flex-direction: column;
+    }
+  }
+}

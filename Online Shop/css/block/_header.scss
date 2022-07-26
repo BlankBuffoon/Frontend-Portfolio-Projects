@@ -1,0 +1,104 @@
+$menu__padding-left: 30px;
+
+.header {
+    background-color: #222222;
+    padding: 20px 0;
+    position: relative;
+    transition: display 1s;
+        
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__left {
+        a:not(:last-child) {
+            margin-right: 40px;
+        }
+    }
+
+    &__right {
+
+        .menu__button {
+            background: none;
+            border: none;
+            margin-right: 35px;
+            cursor: pointer;
+        }
+
+        label {
+            display: inline-block;
+            margin-right: 35px;
+        }
+        
+        a:not(:last-child) {
+            margin-right: 35px;
+        }
+    }
+
+    &__nav {
+        position: absolute;
+        right: 0;
+        top: 83px;
+        display: none;
+        height: calc(100vh - 83px);
+        padding: 35px 30px;
+        width: 232px;
+        background: #FFFFFF;
+        z-index: 10;
+
+        .menu__button--close {
+            position: absolute;
+            background: none;
+            border: none;
+            cursor: pointer;
+            top: 16px;
+            right: 16px;
+        }
+
+        h2 {
+            margin-bottom: 24px;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 17px;
+            font-style: normal;
+            color: #000000;
+        }
+
+        ul {
+            list-style-type: none;
+
+            h2 {
+                font-size: 14px;
+                line-height: 17px;
+                color: #F16D7F;
+                margin-bottom: 10px;
+            }
+
+            li {
+                a {
+                    text-decoration: none;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #6F6E6E;
+                    padding-left: 55px - $menu__padding-left;
+                }
+
+                &:not(:last-child) {
+                    margin-bottom: 10px;
+                }
+
+                &:last-child {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+
+    .open {
+        display: block;
+    }    
+
+    
+}
