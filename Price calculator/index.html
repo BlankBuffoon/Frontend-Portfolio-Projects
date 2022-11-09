@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="css/style.min.css?_v=20220905121210">
+
+    <title>Про Технологии - ИТ-компания в Оренбурге</title>
+</head>
+
+<body>
+    <header class="header container">
+    <div class="header__text">
+        <div class="header__title">
+            <div class="header__dots">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <h1 class="page-title">Калькулятор расчета блока</h1>
+        </div>
+        <p class="paragraph page-paragpaph">Раньше дома и здания строили, особо не задумываясь о теплопроводности. Поэтому делали стены дома толстыми до 1,5 метров, чтобы в доме было тепло и комфортно даже в сильный мороз и прохладно в жаркую погоду. Сейчас делать стены такими толстыми экономически нецелесообразно. В настоящее время существуют материалы, которые могут обеспечить высокие показатели тепловой защиты при меньшей толщине стены, но при таких же прочностных характеристиках.</p>
+
+        <p class="page-paragpaph"><span>Этот калькулятор</span> поможет выбрать вам нужную вам толщину стен дома в зависимости от вашего региона и от вида материала, который вы собираетесь использовать для несущих стен.</p>
+    </div>
+</header>
+
+    <main>
+        <section class="calculator container">
+            <div class="calculator__menu">
+                <div>
+                    <a href="#stage1">
+                        <p class="menu-title">Наружные несущие стены</p>
+                        <div class="menu-number">1</div>
+                    </a>
+                </div>
+                <div>
+                    <a href="#stage2">
+                        <p class="menu-title">Внутренние несущие стены</p>
+                        <div class="menu-number">2</div>
+                    </a>
+                </div>
+                <div>
+                    <a href="#stage3">
+                        <p class="menu-title">Внутренние перегородки</p>
+                        <div class="menu-number">3</div>
+                    </a>
+                </div>
+                <div>
+                    <a href="#stage4">
+                        <p class="menu-title">Отчет по расчету</p>
+                        <div class="menu-number">4</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="calculator__wrapper">
+
+                <section class="calculator__stage" id="stage1">
+    <div class="calculator__heading">
+        <img src="img/heading img.png" alt="">
+        <h2 class="page-heading">Наружные несущие стены</h2>
+    </div>
+    
+    <section class="calculator__block calculator__block-blockparams">
+        <div class="calculator__block-formwrapper" >
+            <div class="calculator__block-heading">
+                <h3 class="block-heading">Выберите параметры блока</h3>
+            </div>
+            <form class="calculator__block-form" action="#">
+                <div class="calculator__block-wrapper">
+                    <p class="calculator__block-text block-text">Размер блока</p>
+                    <div class="calculator__block-flex">
+                        <div class="calculator__block-select">
+                            <select name="block-size" id="stage1-block-size" class="block-text">
+                                <option class="block-text" value="standart">№1 Блок Стандартный 188*300*588мм</option>
+                                <option class="block-text" value="energy">№2 Блок Энергоэффективный 380*300*588мм</option>
+                                <option class="block-text" value="comfort">№3 Блок Комфорт 285*300*588мм</option>
+                                <option class="block-text" value="comfortBrick">№4 Блок Комфорт (с кирпичом) 250*188*588мм</option>
+                                <option class="block-text" value="comfortPlusBrick">№5 Блок Комфорт + (с кирпичом) 235*300*588мм</option>
+                                <option class="block-text" value="comfortTempPlusBrick">№6 Блок Комфорт (с утеплением) + кирпич 188*300*588мм</option>
+                            </select>
+                            <span class="block-text-small">Заменяет 34 кирпича / 4 керамзитоблока</span>
+                        </div>
+                        <div class="calculator__block-select">
+                            <select name="block-type" id="stage1-block-type" class="block-text">
+                                
+                            </select>
+                            <span class="block-text-small">Подходит для несущих наружных и внутренних стен</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="calculator__block-wrapper">
+                    <p class="block-text" for="">Расположение блока</p>
+                    <div class="calculator__block-radio">
+                        <div class="calculator__block-radio-section">
+                            <input type="radio" name="stage1-block-align" id="stage1-block-align-vert">
+                            <label class="block-text" for="stage1-block-align-vert">Вертикально</label>
+                        </div>
+                        <div class="calculator__block-radio-section">
+                            <input type="radio" name="stage1-block-align" id="stage1-block-align-hor" checked>
+                            <label class="block-text" for="stage1-block-align-hor">Горизонтально</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="calculator__block-wrapper">
+                    <p class="block-text" for="">Запас на обрезки (%)</p>
+                    <div class="calculator__block-number">
+                        <input type="number" name="block-reserve" id="stage1-block-reserve">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="calculator__block-imgwrapper">
+            <picture><source srcset="./img/blocks/blok-380x300x588_armidablok.webp" type="image/webp"><img src="./img/blocks/blok-380x300x588_armidablok.png" alt="brick"></picture>
+        </div>
+    </section>
+
+    <section class="calculator__block calculator__block-wallheight">
+        <div class="calculator__block-formwrapper">
+            <div class="calculator__block-heading">
+                <h3 class="block-heading">Введите размер стен</h3>
+            </div>
+            <form action="#" class="calculator__block-form">
+                <ul class="calculator__block-form-list menu-title">
+                </ul>
+                <div class="calculator__block-wrapper">
+                    <div class="calculator__block-flex">
+                        <div class="calculator__block-number">
+                            <p class="block-text" for="">Общая длина стем (м)</p>
+                            <input type="number" name="stage1-wallwidth" id="stage1-wallwidth">
+                        </div>
+                        <div class="calculator__block-select">
+                            <p class="block-text" for="">Высота этажа (м)</p>
+                            <select name="stage1-wallheight" id="stage1-wallheight">
+                                <option value="2.7">2.7</option>
+                                <option value="3">3</option>
+                                <option value="3.2">3.2</option>
+                            </select>
+                        </div>
+                        <div class="calculator__block-checkbox">
+                            <input type="checkbox" name="stage1-fit-to-block-height" id="stage1-fit-to-block-height">
+                            <label class="block-text" for="stage1-fit-to-block-height">Подогнать по высоте блока</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="calculator__block-wrapper">
+                    <div class="calculator__block-formsubmit">
+                        <div class="calculator__block-flex">
+                            <button id="wallParams-submit" class="btn-text-lowercase">Добавить этаж</button>
+                            <button id="wallParams-dublicate" class="btn-text-lowercase">Продублировать этаж</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="calculator__block-imgwrapper">
+            <picture><source srcset="./img/wallheight/6.webp" type="image/webp"><img src="./img/wallheight/6.png" alt="wall"></picture>
+        </div>
+    </section>
+
+    <section class="calculator__block calculator__block-doorways">
+        <div class="calculator__block-formwrapper">
+            <div class="calculator__block-heading">
+                <h3 class="block-heading">Укажите размеры проемов (оконных/дверных)</h3>
+            </div>
+            <div class="calculator__block-wrapper">
+                <form action="#" class="calculator__block-form">
+                    <ul class="calculator__block-form-list menu-title">
+                    </ul>
+                    <div class="calculator__block-wrapper">
+                        <div class="calculator__block-flex">
+                            <div class="calculator__block-number">
+                                <p class="block-text" for="">Ширина (м)</p>
+                                <input type="number" name="stage1-doorway-width" id="stage1-doorway-width">
+                            </div>
+                            <div class="calculator__block-number">
+                                <p class="block-text" for="">Высота (м)</p>
+                                <input type="number" name="stage1-doorway-height" id="stage1-doorway-height">
+                            </div>
+                            <div class="calculator__block-number">
+                                <p class="block-text" for="">Количество (шт)</p>
+                                <input type="number" name="stage1-doorway-quantity" id="stage1-doorway-quantity">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calculator__block-wrapper">
+                        <div class="calculator__block-flex">
+                            <div class="calculator__block-formsubmit">
+                                <button id="doorWays-submit" class="btn-text-lowercase">Добавить проем</button>
+                            </div>
+                            <div class="calculator__block-checkbox">
+                                <input type="checkbox" name="stage1-doorway-jumper" id="stage1-doorway-jumper">
+                                <label class="block-text" for="stage1-doorway-jumper">Добавить перемычку</label>
+                            </div>
+                            <div class="calculator__block-checkbox">
+                                <input type="checkbox" name="stage1-doorway-windowjumper" id="stage1-doorway-windowjumper">
+                                <label class="block-text" for="stage1-doorway-windowjumper">Добавить подоконную перемычку</label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="calculator__block-imgwrapper">
+            <picture><source srcset="./img/doorways/4.1.webp" type="image/webp"><img src="./img/doorways/4.1.png" alt="doorways"></picture>
+        </div>
+    </section>
+
+    <section class="calculator__block-additionally active">
+        <div class="calculator__block-additionallyheading">
+            <button class="block-heading">Дополнительно</button>
+        </div>
+        <section class="calculator__block calculator__block-fronts">
+            <div class="calculator__block-formwrapper">
+                <div class="calculator__block-heading">
+                    <h3 class="block-heading">Укажите размеры фронтонов</h3>
+                </div>
+                <form action="#" class="calculator__block-form">
+                    <ul class="calculator__block-form-list menu-title">
+                    </ul>
+                    <div class="calculator__block-wrapper">
+                        <div class="calculator__block-flex">
+                            <div class="calculator__block-number">
+                                <p class="block-text" for="">Ширина (м)</p>
+                                <input type="number" name="stage1-front-width" id="stage1-front-width">
+                            </div>
+                            <div class="calculator__block-number">
+                                <p class="block-text" for="">Высота (м)</p>
+                                <input type="number" name="stage1-front-height" id="stage1-front-height">
+                            </div>
+                            <div class="calculator__block-number">
+                                <p class="block-text" for="">Количество (шт)</p>
+                                <input type="number" name="stage1-front-quantity" id="stage1-front-quantity">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calculator__block-wrapper">
+                        <div class="calculator__block-formsubmit">
+                            <div class="calculator__block-flex">
+                                <button id="fronts-submit" class="btn-text-lowercase">Добавить фронтон</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="calculator__block-imgwrapper">
+                <picture><source srcset="./img/fronts/1.webp" type="image/webp"><img src="./img/fronts/1.png" alt="fronts"></picture>
+            </div>
+        </section>
+
+        <section class="calculator__block calculator__block-trapezoidwindows">
+            <div class="calculator__block-formwrapper">
+                <div class="calculator__block-heading">
+                    <h3 class="block-heading">Укажите размеры Трапециевидных окон</h3>
+                </div>
+                <form action="#" class="calculator__block-form">
+                    <ul class="calculator__block-form-list menu-title">
+                    </ul>
+                    <div class="calculator__block-wrapper">
+                        <div class="calculator__block-flex">
+                            <div class="calculator__block-number">
+                                <p class="block-text" for="">Ширина (м)</p>
+                                <input type="number" name="stage1-trapezoidwindows-widht" id="stage1-trapezoidwindows-width">
+                            </div>
+                            <div class="calculator__block-number">
+                                <p class="block-text" for="">Высота 1 (м)</p>
+                                <input type="number" name="stage1-trapezoidwindows-height-first" id="stage1-trapezoidwindows-height-first">
+                            </div>
+                            <div class="calculator__block-number">
+                                <p class="block-text" for="">Высота 2 (м)</p>
+                                <input type="number" name="stage1-trapezoidwindows-height-second" id="stage1-trapezoidwindows-height-second">
+                            </div>
+                            <div class="calculator__block-number">
+                                <p class="block-text" for="">Количество (шт)</p>
+                                <input type="number" name="stage1-trapezoidwindows-quantity" id="stage1-trapezoidwindows-quantity">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calculator__block-wrapper">
+                        <div class="calculator__block-flex">
+                            <div class="calculator__block-formsubmit">
+                                <button id="trapezoidwindows-submit" class="btn-text-lowercase">Добавить окно</button>
+                            </div>
+                            <div class="calculator__block-checkbox">
+                                <input type="checkbox" name="stage1-trapezoidWindows-jumper" id="stage1-trapezoidWindows-jumper">
+                                <label class="block-text" for="stage1-trapezoidWindows-jumper">Добавить перемычку</label>
+                            </div>
+                            <div class="calculator__block-checkbox">
+                                <input type="checkbox" name="stage1-trapezoidWindows-windowjumper" id="stage1-trapezoidWindows-windowjumper">
+                                <label class="block-text" for="stage1-trapezoidWindows-windowjumper">Добавить подоконную перемычку</label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="calculator__block-imgwrapper">
+                <picture><source srcset="./img/trapezoidwindow/1.webp" type="image/webp"><img src="./img/trapezoidwindow/1.png" alt="trapezoidwindow"></picture>
+            </div>
+        </section>
+
+        <section class="calculator__block calculator__block-circlewindows">
+            <div class="calculator__block-formwrapper">
+                <div class="calculator__block-heading">
+                    <h3 class="block-heading">Укажите размеры круглых окон</h3>
+                </div>
+                <form action="#" class="calculator__block-form">
+                    <ul class="calculator__block-form-list menu-title">
+                    </ul>
+                    <div class="calculator__block-wrapper">
+                        <div class="calculator__block-flex">
+                            <div class="calculator__block-number">
+                                <p class="block-text" for="">Диаметр (м)</p>
+                                <input type="number" name="stage1-circlewindows-diameter" id="stage1-circlewindows-diameter">
+                            </div>
+                            <div class="calculator__block-number">
+                                <p class="block-text" for="">Колличество (шт)</p>
+                                <input type="number" name="stage1-circlewindows-quantity" id="stage1-circlewindows-quantity">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calculator__block-wrapper">
+                        <div class="calculator__block-flex">
+                            <div class="calculator__block-formsubmit">
+                                <button id="circleWindows-submit" class="btn-text-lowercase">Добавить окно</button>
+                            </div>
+                            <div class="calculator__block-checkbox">
+                                <input type="checkbox" name="stage1-circleWindows-jumper" id="stage1-circleWindows-jumper">
+                                <label class="block-text" for="stage1-circleWindows-jumper">Добавить перемычку</label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="calculator__block-imgwrapper">
+                <picture><source srcset="./img/circlewindow/5.webp" type="image/webp"><img src="./img/circlewindow/5.png" alt="circlewindow"></picture>
+            </div>
+        </section>
+
+        <div class="calculator__block calculator__block-bgimg">
+            <div class="calculator__block-formwrapper">
+                <section class="calculator__block-glue">
+                    <div class="calculator__block-heading">
+                        <h3 class="block-heading">Клей</h3>
+                    </div>
+                    <form class="calculator__block-form" action="">
+                        <div class="calculator__block-wrapper">
+                            <p class="menu-title">Добавить к рассчёту клей для кладки блока</p>
+                            <div class="calculator__block-checkbox">
+                                <input type="checkbox" name="stage1-glue" id="stage1-glue">
+                                <label class="block-text" for="stage1-glue">Добавить</label>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+
+                <section class="calculator__block-foamglue">
+                    <div class="calculator__block-heading">
+                        <h3 class="block-heading">Пена-Клей</h3>
+                    </div>
+                    <form class="calculator__block-form" action="">
+                        <div class="calculator__block-wrapper">
+                            <p class="menu-title">Добавить к рассчёту пена-клей для кладки блока</p>
+                            <div class="calculator__block-checkbox">
+                                <input type="checkbox" name="stage1-foam-glue" id="stage1-foam-glue">
+                                <label class="block-text" for="stage1-foam-glue">Добавить</label>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+            </div>
+            <div class="calculator__block-imgwrapper">
+                <picture><source srcset="./img/glue/foamglue.webp" type="image/webp"><img src="./img/glue/foamglue.png" alt="glue"></picture>
+            </div>
+        </div>
+        
+        <section class="calculator__block calculator__block-masonrygrid">
+            <div class="calculator__block-formwrapper">
+                <div class="calculator__block-heading">
+                    <h3 class="block-heading">Кладочная сетка</h3>
+                </div>
+                <form class="calculator__block-form" action="">
+                    <div class="calculator__block-wrapper">
+                        <p class="menu-title">Добавить к рассчёту кладочную сетку</p>
+                        <div class="calculator__block-checkbox">
+                            <input type="checkbox" name="stage1-masonrygrid" id="stage1-masonrygrid">
+                            <label class="block-text" for="stage1-masonrygrid">Добавить</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="calculator__block-imgwrapper">
+                <picture><source srcset="./img/grid/blockgrid.webp" type="image/webp"><img src="./img/grid/blockgrid.png" alt="grid"></picture>
+            </div>
+        </section>
+    </section>
+
+    <button id="stage1-confirmbtn" class="calculator__stage-confirmbtn btn-text">Подтвердить</button>
+</section>
+
+                <section class="calculator__stage" id="stage2">
+    <div class="calculator__heading">
+        <img src="img/stage2 heading img.png" alt="">
+        <h2 class="page-heading">Внутренние несущие стены</h2>
+    </div>
+    
+    <section class="calculator__block calculator__block-blockparams">
+        <div class="calculator__block-formwrapper" >
+            <div class="calculator__block-heading">
+                <h3 class="block-heading">Выберите параметры блока</h3>
+            </div>
+            <form class="calculator__block-form" action="#">
+                <div class="calculator__block-wrapper">
+                    <p class="calculator__block-text block-text">Размер блока</p>
+                    <div class="calculator__block-flex">
+                        <div class="calculator__block-select">
+                            <select name="block-size" id="stage2-block-size" class="block-text">
+                                <option class="block-text" value="standart">№1 Блок Стандартный 188*300*588мм</option>
+                                <option class="block-text" value="energy">№2 Блок Энергоэффективный 380*300*588мм</option>
+                                <option class="block-text" value="comfort">№3 Блок Комфорт 285*300*588мм</option>
+                                <option class="block-text" value="comfortBrick">№4 Блок Комфорт (с кирпичом) 250*188*588мм</option>
+                                <option class="block-text" value="comfortPlusBrick">№5 Блок Комфорт + (с кирпичом) 235*300*588мм</option>
+                                <option class="block-text" value="comfortTempPlusBrick">№6 Блок Комфорт (с утеплением) + кирпич 188*300*588мм</option>
+                            </select>
+                            <span class="block-text-small">Заменяет 34 кирпича / 4 керамзитоблока</span>
+                        </div>
+                        <div class="calculator__block-select">
+                            <select name="block-type" id="stage2-block-type" class="block-text">
+                                
+                            </select>
+                            <span class="block-text-small">Подходит для несущих наружных и внутренних стен</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="calculator__block-wrapper">
+                    <p class="block-text" for="">Расположение блока</p>
+                    <div class="calculator__block-radio">
+                        <div class="calculator__block-radio-section">
+                            <input type="radio" name="stage2-block-align" id="stage2-block-align-vert">
+                            <label class="block-text" for="stage2-block-align-vert">Вертикально</label>
+                        </div>
+                        <div class="calculator__block-radio-section">
+                            <input type="radio" name="stage2-block-align" id="stage2-block-align-hor" checked>
+                            <label class="block-text" for="stage2-block-align-hor">Горизонтально</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="calculator__block-wrapper">
+                    <p class="block-text" for="">Запас на обрезки (%)</p>
+                    <div class="calculator__block-number">
+                        <input type="number" name="block-reserve" id="stage2-block-reserve">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="calculator__block-imgwrapper">
+            <picture><source srcset="./img/blocks/blok-380x300x588_armidablok.webp" type="image/webp"><img src="./img/blocks/blok-380x300x588_armidablok.png" alt="brick"></picture>
+        </div>
+    </section>
+
+    <section class="calculator__block calculator__block-wallheight">
+        <div class="calculator__block-formwrapper">
+            <div class="calculator__block-heading">
+                <h3 class="block-heading">Введите размер стен</h3>
+            </div>
+            <form action="#" class="calculator__block-form">
+                <ul class="calculator__block-form-list menu-title">
+                </ul>
+                <div class="calculator__block-wrapper">
+                    <div class="calculator__block-flex">
+                        <div class="calculator__block-number">
+                            <p class="block-text" for="">Общая длина стем (м)</p>
+                            <input type="number" name="stage2-wallwidth" id="stage2-wallwidth">
+                        </div>
+                        <div class="calculator__block-select">
+                            <p class="block-text" for="">Высота этажа (м)</p>
+                            <select name="stage2-wallheight" id="stage2-wallheight">
+                                <option value="2.7">2.7</option>
+                                <option value="3">3</option>
+                                <option value="3.2">3.2</option>
+                            </select>
+                        </div>
+                        <div class="calculator__block-checkbox">
+                            <input type="checkbox" name="stage2-fit-to-block-height" id="stage2-fit-to-block-height">
+                            <label class="block-text" for="stage2-fit-to-block-height">Подогнать по высоте блока</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="calculator__block-wrapper">
+                    <div class="calculator__block-formsubmit">
+                        <div class="calculator__block-flex">
+                            <button id="wallParams-submit" class="btn-text-lowercase">Добавить этаж</button>
+                            <button id="wallParams-dublicate" class="btn-text-lowercase">Продублировать этаж</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="calculator__block-imgwrapper">
+            <picture><source srcset="./img/wallheight/6.webp" type="image/webp"><img src="./img/wallheight/6.png" alt="wall"></picture>
+        </div>
+    </section>
+
+    <section class="calculator__block calculator__block-doorways">
+        <div class="calculator__block-formwrapper">
+            <div class="calculator__block-heading">
+                <h3 class="block-heading">Укажите размеры Межкомнатных дверных проемов</h3>
+            </div>
+            <div class="calculator__block-wrapper">
+                <form action="#" class="calculator__block-form">
+                    <ul class="calculator__block-form-list menu-title">
+                    </ul>
+                    <div class="calculator__block-wrapper">
+                        <div class="calculator__block-flex">
+                            <div class="calculator__block-number">
+                                <p class="block-text" for="">Ширина (м)</p>
+                                <input type="number" name="stage2-doorway-width" id="stage2-doorway-width">
+                            </div>
+                            <div class="calculator__block-number">
+                                <p class="block-text" for="">Высота (м)</p>
+                                <input type="number" name="stage2-doorway-height" id="stage2-doorway-height">
+                            </div>
+                            <div class="calculator__block-number">
+                                <p class="block-text" for="">Количество (шт)</p>
+                                <input type="number" name="stage2-doorway-quantity" id="stage2-doorway-quantity">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calculator__block-wrapper">
+                        <div class="calculator__block-flex">
+                            <div class="calculator__block-formsubmit">
+                                <button id="doorWays-submit" class="btn-text-lowercase">Добавить проем</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="calculator__block-imgwrapper">
+            <picture><source srcset="./img/doorways/4.1.webp" type="image/webp"><img src="./img/doorways/4.1.png" alt="doorways"></picture>
+        </div>
+    </section>
+
+    <section class="calculator__block-additionally">
+        <div class="calculator__block-additionallyheading">
+            <button class="block-heading">Дополнительно</button>
+        </div>
+        <div class="calculator__block calculator__block-bgimg">
+            <div class="calculator__block-formwrapper">
+                <section class="calculator__block-glue">
+                    <div class="calculator__block-heading">
+                        <h3 class="block-heading">Клей</h3>
+                    </div>
+                    <form class="calculator__block-form" action="">
+                        <div class="calculator__block-wrapper">
+                            <p class="menu-title">Добавить к рассчёту клей для кладки блока</p>
+                            <div class="calculator__block-checkbox">
+                                <input type="checkbox" name="stage2-glue" id="stage2-glue">
+                                <label class="block-text" for="stage2-glue">Добавить</label>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+
+                <section class="calculator__block-foamglue">
+                    <div class="calculator__block-heading">
+                        <h3 class="block-heading">Пена-Клей</h3>
+                    </div>
+                    <form class="calculator__block-form" action="">
+                        <div class="calculator__block-wrapper">
+                            <p class="menu-title">Добавить к рассчёту пена-клей для кладки блока</p>
+                            <div class="calculator__block-checkbox">
+                                <input type="checkbox" name="stage2-foam-glue" id="stage2-foam-glue">
+                                <label class="block-text" for="stage2-foam-glue">Добавить</label>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+            </div>
+            <div class="calculator__block-imgwrapper">
+                <picture><source srcset="./img/glue/foamglue.webp" type="image/webp"><img src="./img/glue/foamglue.png" alt="glue"></picture>
+            </div>
+        </div>
+        
+        <section class="calculator__block calculator__block-masonrygrid">
+            <div class="calculator__block-formwrapper">
+                <div class="calculator__block-heading">
+                    <h3 class="block-heading">Кладочная сетка</h3>
+                </div>
+                <form class="calculator__block-form" action="">
+                    <div class="calculator__block-wrapper">
+                        <p class="menu-title">Добавить к рассчёту кладочную сетку</p>
+                        <div class="calculator__block-checkbox">
+                            <input type="checkbox" name="stage2-masonrygrid" id="stage2-masonrygrid">
+                            <label class="block-text" for="stage2-masonrygrid">Добавить</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="calculator__block-imgwrapper">
+                <picture><source srcset="./img/grid/blockgrid.webp" type="image/webp"><img src="./img/grid/blockgrid.png" alt="grid"></picture>
+            </div>
+        </section>
+    </section>
+
+    <button id="stage2-confirmbtn" class="calculator__stage-confirmbtn btn-text">Подтвердить</button>
+</section>
+
+                <section class="calculator__stage" id="stage3">
+    <div class="calculator__heading">
+        <img src="img/stage3 heading img.png" alt="">
+        <h2 class="page-heading">Внутренние перегородки</h2>
+    </div>
+
+    <section class="calculator__block calculator__block-blockparams">
+        <div class="calculator__block-formwrapper" >
+            <div class="calculator__block-heading">
+                <h3 class="block-heading">Выберите параметры блока</h3>
+            </div>
+            <form class="calculator__block-form" action="#">
+                <div class="calculator__block-wrapper">
+                    <p class="calculator__block-text block-text">Размер блока</p>
+                    <div class="calculator__block-flex">
+                        <div class="calculator__block-select">
+                            <select name="block-size" id="stage3-block-size" class="block-text">
+                                <option class="block-text" value="luxe">№1 Блок Люкс 188*300*588мм</option>
+                                <option class="block-text" value="confort">№2 Блок Комфорт 380*300*588мм</option>
+                                <option class="block-text" value="storeroom">№3 Блок Кладовая 285*300*588мм</option>
+                            </select>
+                            <span class="block-text-small">Заменяет 34 кирпича / 4 керамзитоблока</span>
+                        </div>
+                        <div class="calculator__block-select">
+                            <select name="block-type" id="stage3-block-type" class="block-text">
+                                
+                            </select>
+                            <span class="block-text-small">Подходит для несущих наружных и внутренних стен</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="calculator__block-wrapper">
+                    <p class="block-text" for="">Расположение блока</p>
+                    <div class="calculator__block-radio">
+                        <div class="calculator__block-radio-section">
+                            <input type="radio" name="stage3-block-align" id="stage3-block-align-vert">
+                            <label class="block-text" for="stage3-block-align-vert">Вертикально</label>
+                        </div>
+                        <div class="calculator__block-radio-section">
+                            <input type="radio" name="stage3-block-align" id="stage3-block-align-hor" checked>
+                            <label class="block-text" for="stage3-block-align-hor">Горизонтально</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="calculator__block-wrapper">
+                    <p class="block-text" for="">Запас на обрезки (%)</p>
+                    <div class="calculator__block-number">
+                        <input type="number" name="block-reserve" id="stage3-block-reserve">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="calculator__block-imgwrapper">
+            <picture><source srcset="./img/blocks/blok-380x300x588_armidablok.webp" type="image/webp"><img src="./img/blocks/blok-380x300x588_armidablok.png" alt="brick"></picture>
+        </div>
+    </section>
+
+    <section class="calculator__block calculator__block-wallheight">
+        <div class="calculator__block-formwrapper">
+            <div class="calculator__block-heading">
+                <h3 class="block-heading">Введите размер стен</h3>
+            </div>
+            <form action="#" class="calculator__block-form">
+                <ul class="calculator__block-form-list menu-title">
+                </ul>
+                <div class="calculator__block-wrapper">
+                    <div class="calculator__block-flex">
+                        <div class="calculator__block-number">
+                            <p class="block-text" for="">Общая длина стем (м)</p>
+                            <input type="number" name="stage3-wallwidth" id="stage3-wallwidth">
+                        </div>
+                        <div class="calculator__block-select">
+                            <p class="block-text" for="">Высота этажа (м)</p>
+                            <select name="stage3-wallheight" id="stage3-wallheight">
+                                <option value="2.7">2.7</option>
+                                <option value="3">3</option>
+                                <option value="3.2">3.2</option>
+                            </select>
+                        </div>
+                        <div class="calculator__block-checkbox">
+                            <input type="checkbox" name="stage3-fit-to-block-height" id="stage3-fit-to-block-height">
+                            <label class="block-text" for="stage3-fit-to-block-height">Подогнать по высоте блока</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="calculator__block-wrapper">
+                    <div class="calculator__block-formsubmit">
+                        <div class="calculator__block-flex">
+                            <button id="wallParams-submit" class="btn-text-lowercase">Добавить этаж</button>
+                            <button id="wallParams-dublicate" class="btn-text-lowercase">Продублировать этаж</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="calculator__block-imgwrapper">
+            <picture><source srcset="./img/wallheight/6.webp" type="image/webp"><img src="./img/wallheight/6.png" alt="wall"></picture>
+        </div>
+    </section>
+
+    <section class="calculator__block calculator__block-doorways">
+        <div class="calculator__block-formwrapper">
+            <div class="calculator__block-heading">
+                <h3 class="block-heading">Укажите размеры Межкомнатных дверных проемов</h3>
+            </div>
+            <form action="#" class="calculator__block-form">
+                <ul class="calculator__block-form-list menu-title">
+                </ul>
+                <div class="calculator__block-wrapper">
+                    <div class="calculator__block-flex">
+                        <div class="calculator__block-number">
+                            <p class="block-text" for="">Ширина (м)</p>
+                            <input type="number" name="stage3-doorway-width" id="stage3-doorway-width">
+                        </div>
+                        <div class="calculator__block-number">
+                            <p class="block-text" for="">Высота (м)</p>
+                            <input type="number" name="stage3-doorway-height" id="stage3-doorway-height">
+                        </div>
+                        <div class="calculator__block-number">
+                            <p class="block-text" for="">Количество (шт)</p>
+                            <input type="number" name="stage3-doorway-quantity" id="stage3-doorway-quantity">
+                        </div>
+                    </div>
+                </div>
+                <div class="calculator__block-wrapper">
+                    <div class="calculator__block-flex">
+                        <div class="calculator__block-formsubmit">
+                            <button id="doorWays-submit" class="btn-text-lowercase">Добавить проем</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="calculator__block-imgwrapper">
+            <picture><source srcset="./img/doorways/insidedoorways_1.webp" type="image/webp"><img src="./img/doorways/insidedoorways_1.png" alt="doorways"></picture>
+        </div>
+    </section>
+
+    <section class="calculator__block-additionally">
+        <div class="calculator__block-additionallyheading">
+            <button class="block-heading">Дополнительно</button>
+        </div>
+        <div class="calculator__block calculator__block-bgimg">
+            <div class="calculator__block-formwrapper">
+                <section class="calculator__block-glue">
+                    <div class="calculator__block-heading">
+                        <h3 class="block-heading">Клей</h3>
+                    </div>
+                    <form class="calculator__block-form" action="">
+                        <div class="calculator__block-wrapper">
+                            <p class="menu-title">Добавить к рассчёту клей для кладки блока</p>
+                            <div class="calculator__block-checkbox">
+                                <input type="checkbox" name="stage3-glue" id="stage3-glue">
+                                <label class="block-text" for="stage3-glue">Добавить</label>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+
+                <section class="calculator__block-foamglue">
+                    <div class="calculator__block-heading">
+                        <h3 class="block-heading">Пена-Клей</h3>
+                    </div>
+                    <form class="calculator__block-form" action="">
+                        <div class="calculator__block-wrapper">
+                            <p class="menu-title">Добавить к рассчёту пена-клей для кладки блока</p>
+                            <div class="calculator__block-checkbox">
+                                <input type="checkbox" name="stage3-foam-glue" id="stage3-foam-glue">
+                                <label class="block-text" for="stage3-foam-glue">Добавить</label>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+            </div>
+            <div class="calculator__block-imgwrapper">
+                <picture><source srcset="./img/glue/foamglue.webp" type="image/webp"><img src="./img/glue/foamglue.png" alt="glue"></picture>
+            </div>
+        </div>
+        
+        <section class="calculator__block calculator__block-masonrygrid">
+            <div class="calculator__block-formwrapper">
+                <div class="calculator__block-heading">
+                    <h3 class="block-heading">Кладочная сетка</h3>
+                </div>
+                <form class="calculator__block-form" action="">
+                    <div class="calculator__block-wrapper">
+                        <p class="menu-title">Добавить к рассчёту кладочную сетку</p>
+                        <div class="calculator__block-checkbox">
+                            <input type="checkbox" name="stage3-masonrygrid" id="stage3-masonrygrid">
+                            <label class="block-text" for="stage3-masonrygrid">Добавить</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="calculator__block-imgwrapper">
+                <picture><source srcset="./img/grid/blockgrid.webp" type="image/webp"><img src="./img/grid/blockgrid.png" alt="grid"></picture>
+            </div>
+        </section>
+    </section>
+
+    <button id="stage3-confirmbtn" class="calculator__stage-confirmbtn btn-text">Подтвердить</button>
+</section>
+
+                <section class="calculator__stage" id="stage4">
+        <div class="export__menu">
+            <button id="stage4-databtn" class="block-heading">
+                <div>
+                    Введенные данные для расчета
+                    <div></div>
+                </div>
+            </button>
+            <div class="export__menu-wrapper">
+                <button id="stage4-tablecalcbtn" class="block-heading">1</button>
+                <div>/</div>
+                <button id="stage4-expandedcalcbtn" class="block-heading">1</button>
+                <button id="stage4-shortcalcbtn" class="block-heading">
+                    <div>
+                        Краткий расчет
+                        <div></div>
+                    </div>
+                </button>
+            </div>
+            <button id="stage4-detalcalcbtn" class="block-heading">
+                <div>
+                    Детальный расчет
+                    <div></div>
+                </div>
+            </button>
+        </div>
+
+        <section class="export export-data active">
+            <div class="export__block-tableicons">
+                <div class="export__block-tableicons-element">
+                    <img src="../img/heading img.png" alt="">
+                    <h3 class="menu-title">Наружные несущие стены</h3>
+                </div>
+                <div class="export__block-tableicons-element">
+                    <img src="../img/stage2 heading img.png" alt="">
+                    <h3 class="menu-title">Внутренние несущие стены</h3>
+                </div>
+                <div class="export__block-tableicons-element">
+                    <img src="../img/stage3 heading img.png" alt="">
+                    <h3 class="menu-title">Внутренние перегородки</h3>
+                </div>
+            </div>
+            <section class="export__block export__block-blockparams">
+                <div class="export__block-tablewrapper">
+                    <div class="export__block-heading">
+                        <h3 class="block-heading">Параметры блока</h3>
+                    </div>
+                    <div class="export__block-table">
+                        <table class="table-text">
+                            <tr>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="export__block-imgwrapper">
+                    
+                </div>
+            </section>
+
+            <section class="export__block export__block-wallheight">
+                <div class="export__block-tablewrapper">
+                    <div class="export__block-heading">
+                        <h3 class="block-heading">Размеры стен</h3>
+                    </div>
+                    <div class="export__block-table">
+                        <table class="table-text">
+                            <tr>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="export__block-imgwrapper">
+                    
+                </div>
+            </section>
+
+            <section class="export__block export__block-doorways">
+                <div class="export__block-tablewrapper">
+                    <div class="export__block-heading">
+                        <h3 class="block-heading">Размеры проемов</h3>
+                    </div>
+                    <div class="export__block-table">
+                        <table class="table-text">
+                            <tr>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="export__block-imgwrapper">
+                    
+                </div>
+            </section>
+
+            <section class="export__block export__block-fronts">
+                <div class="export__block-tablewrapper">
+                    <div class="export__block-heading">
+                        <h3 class="block-heading">Размеры фронтов</h3>
+                    </div>
+                    <div class="export__block-table">
+                        <table class="table-text">
+                            <tr>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="export__block-imgwrapper">
+                    
+                </div>
+            </section>
+
+            <section class="export__block export__block-trapezoidwindows">
+                <div class="export__block-tablewrapper">
+                    <div class="export__block-heading">
+                        <h3 class="block-heading">Размеры трапециевидных окон</h3>
+                    </div>
+                    <div class="export__block-table">
+                        <table class="table-text">
+                            <tr>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="export__block-imgwrapper">
+                    
+                </div>
+            </section>
+
+            <section class="export__block export__block-circlewindows">
+                <div class="export__block-tablewrapper">
+                    <div class="export__block-heading">
+                        <h3 class="block-heading">Размеры круглых окон</h3>
+                    </div>
+                    <div class="export__block-table">
+                        <table class="table-text">
+                            <tr>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="export__block-imgwrapper">
+                    
+                </div>
+            </section>
+
+            <section class="export__block export__block-glue">
+                <div class="export__block-tablewrapper">
+                    <div class="export__block-heading">
+                        <h3 class="block-heading">Клей</h3>
+                    </div>
+                    <div class="export__block-table">
+                        <table class="table-text">
+                            <tr>
+                                <td>Учесть в расчете</td>
+                                <td><input type="checkbox" disabled></td>
+                                <td><input type="checkbox" disabled></td>
+                                <td><input type="checkbox" disabled></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="export__block-imgwrapper">
+                    
+                </div>
+            </section>
+
+            <section class="export__block export__block-foamglue">
+                <div class="export__block-tablewrapper">
+                    <div class="export__block-heading">
+                        <h3 class="block-heading">Пена-Клей</h3>
+                    </div>
+                    <div class="export__block-table">
+                        <table class="table-text">
+                            <tr>
+                                <td>Учесть в расчете</td>
+                                <td><input type="checkbox" disabled></td>
+                                <td><input type="checkbox" disabled></td>
+                                <td><input type="checkbox" disabled></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="export__block-imgwrapper">
+                    
+                </div>
+            </section>
+
+            <section class="export__block export__block-masonrygrid">
+                <div class="export__block-tablewrapper">
+                    <div class="export__block-heading">
+                        <h3 class="block-heading">Кладочная сетка</h3>
+                    </div>
+                    <div class="export__block-table">
+                        <table class="table-text">
+                            <tr>
+                                <td>Учесть в расчете</td>
+                                <td><input type="checkbox" disabled></td>
+                                <td><input type="checkbox" disabled></td>
+                                <td><input type="checkbox" disabled></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="export__block-imgwrapper">
+                    
+                </div>
+            </section>
+        </section>
+
+        <section class="export export-table">
+            shortcalc
+        </section>
+
+        <section class="export export-tableexpanded">
+            <div class="export__block-tableicons">
+                <div class="export__block-tableicons-element">
+                    <img src="../img/heading img.png" alt="">
+                    <h3 class="menu-title">Наружные несущие стены</h3>
+                </div>
+                <div class="export__block-tableicons-element">
+                    <img src="../img/stage2 heading img.png" alt="">
+                    <h3 class="menu-title">Внутренние несущие стены</h3>
+                </div>
+                <div class="export__block-tableicons-element">
+                    <img src="../img/stage3 heading img.png" alt="">
+                    <h3 class="menu-title">Внутренние перегородки</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="export export-detal">
+            detalcalc
+        </section>
+</section>
+                
+            </div>
+        </section>
+    </main>
+
+    <footer>
+    <script defer src="js/app.min.js?_v=20220905121210"></script>
+</footer>
+</body>
+
+</html>
